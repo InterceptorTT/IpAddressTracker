@@ -10,7 +10,7 @@ function App() {
 
   useEffect(() => {
       fetch(
-        `https://geo.ipify.org/api/v2/country,city?apiKey=at_QJ2gPl7clRxR4vvQldTnDaeBcAC9j&ipAddress=${ipAddress}`
+        `https://cors-anywhere.herokuapp.com/https://geo.ipify.org/api/v2/country,city?apiKey=at_QJ2gPl7clRxR4vvQldTnDaeBcAC9j&ipAddress=${ipAddress}`
       )
         .then((res) => res.json())
         .then((data) => setData(data))
